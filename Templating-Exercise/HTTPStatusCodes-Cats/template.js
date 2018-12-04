@@ -14,7 +14,7 @@ $(() => {
             });
 
             function ShowAndHideInfo() {
-                console.log(this.nextElementSibling);
+                console.log(this.next);
                 this.nextElementSibling.style.display = "inline-block";
                 $(this).text('Hide status code').on("click", hideInfo)
 
