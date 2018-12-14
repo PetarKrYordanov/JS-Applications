@@ -1,7 +1,7 @@
 $(() => {
     const app = Sammy('#main', function () {
         this.use("Handlebars", "hbs");
-        this.get("/index.html", displayHome);
+        this.get("#/", displayHome);
         this.get("#/home", displayHome);
 
         this.get('#/about', function (context) {
@@ -220,5 +220,5 @@ $(() => {
         }
     });
 
-    app.run();
+    app.run('#/');
 });
